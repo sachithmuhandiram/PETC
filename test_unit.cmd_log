@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Sachith-PC/Desktop/xi/PETC_test/test_unit.xst" -ofn "C:/Users/Sachith-PC/Desktop/xi/PETC_test/test_unit.syr" 

@@ -1,0 +1,1146 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
+ 
+--> Reading design: test_unit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "test_unit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "test_unit"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : test_unit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/xorwithclk.vhd" in Library work.
+Entity <xorwithclk> compiled.
+Entity <xorwithclk> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/andwithclk.vhd" in Library work.
+Entity <andwithclk> compiled.
+Entity <andwithclk> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/orwithclk.vhd" in Library work.
+Entity <orwithclk> compiled.
+Entity <orwithclk> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/fulladder.vhd" in Library work.
+Entity <fulladderstructural> compiled.
+Entity <fulladderstructural> (Architecture <Structural>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/sixteenbitadder.vhd" in Library work.
+Entity <sixteenbitadder> compiled.
+Entity <sixteenbitadder> (Architecture <Structural>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/mux_2to1.vhd" in Library work.
+Entity <mux2to1> compiled.
+Entity <mux2to1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/notGate.vhd" in Library work.
+Entity <notgate> compiled.
+Entity <notgate> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/PC.vhd" in Library work.
+Entity <Program_Counter> compiled.
+Entity <Program_Counter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/ROM.vhd" in Library work.
+Entity <Instruction_Memory> compiled.
+Entity <Instruction_Memory> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/IR.vhd" in Library work.
+Entity <Instruction_register> compiled.
+Entity <Instruction_register> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Communication_register.vhd" in Library work.
+Entity <Communication_register> compiled.
+Entity <Communication_register> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Communication_demux.vhd" in Library work.
+Entity <Communication_demux> compiled.
+Entity <Communication_demux> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Datawidth_Conveter.vhd" in Library work.
+Entity <Datawidth_Conveter> compiled.
+Entity <Datawidth_Conveter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/addsubunit.vhd" in Library work.
+Entity <addsubunit> compiled.
+Entity <addsubunit> (Architecture <Structural>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Communication_MUX.vhd" in Library work.
+Entity <Communication_MUX> compiled.
+Entity <Communication_MUX> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/registerX.vhd" in Library work.
+Entity <Register_X> compiled.
+Entity <Register_X> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/registerY.vhd" in Library work.
+Entity <Register_Y> compiled.
+Entity <Register_Y> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Control_Unit.vhd" in Library work.
+Entity <Control_Unit> compiled.
+Entity <Control_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sachith-PC/Desktop/xi/PETC_test/test_unit.vhd" in Library work.
+Entity <test_unit> compiled.
+Entity <test_unit> (Architecture <Structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <test_unit> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <Program_Counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Instruction_Memory> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Instruction_register> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Communication_register> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Communication_demux> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Datawidth_Conveter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <addsubunit> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <Communication_MUX> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Register_X> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Register_Y> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Control_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <sixteenbitadder> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <mux2to1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <notgate> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <fulladderstructural> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <xorwithclk> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <andwithclk> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <orwithclk> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <test_unit> in library <work> (Architecture <Structural>).
+Entity <test_unit> analyzed. Unit <test_unit> generated.
+
+Analyzing Entity <Program_Counter> in library <work> (Architecture <Behavioral>).
+Entity <Program_Counter> analyzed. Unit <Program_Counter> generated.
+
+Analyzing Entity <Instruction_Memory> in library <work> (Architecture <Behavioral>).
+Entity <Instruction_Memory> analyzed. Unit <Instruction_Memory> generated.
+
+Analyzing Entity <Instruction_register> in library <work> (Architecture <Behavioral>).
+Entity <Instruction_register> analyzed. Unit <Instruction_register> generated.
+
+Analyzing Entity <Communication_register> in library <work> (Architecture <Behavioral>).
+Entity <Communication_register> analyzed. Unit <Communication_register> generated.
+
+Analyzing Entity <Communication_demux> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <send_fee_ack> in unit <Communication_demux> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <send_plate_ack> in unit <Communication_demux> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <send_balance_ack> in unit <Communication_demux> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <update_balance_ack> in unit <Communication_demux> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <Communication_demux> analyzed. Unit <Communication_demux> generated.
+
+Analyzing Entity <Datawidth_Conveter> in library <work> (Architecture <Behavioral>).
+Entity <Datawidth_Conveter> analyzed. Unit <Datawidth_Conveter> generated.
+
+Analyzing Entity <addsubunit> in library <work> (Architecture <Structural>).
+Entity <addsubunit> analyzed. Unit <addsubunit> generated.
+
+Analyzing Entity <sixteenbitadder> in library <work> (Architecture <Structural>).
+WARNING:Xst:819 - "C:/Users/Sachith-PC/Desktop/xi/PETC_test/sixteenbitadder.vhd" line 58: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <added_ack>
+INFO:Xst:2679 - Register <adder_ack> in unit <sixteenbitadder> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <sixteenbitadder> analyzed. Unit <sixteenbitadder> generated.
+
+Analyzing Entity <fulladderstructural> in library <work> (Architecture <Structural>).
+Entity <fulladderstructural> analyzed. Unit <fulladderstructural> generated.
+
+Analyzing Entity <xorwithclk> in library <work> (Architecture <Behavioral>).
+Entity <xorwithclk> analyzed. Unit <xorwithclk> generated.
+
+Analyzing Entity <andwithclk> in library <work> (Architecture <Behavioral>).
+Entity <andwithclk> analyzed. Unit <andwithclk> generated.
+
+Analyzing Entity <orwithclk> in library <work> (Architecture <Behavioral>).
+Entity <orwithclk> analyzed. Unit <orwithclk> generated.
+
+Analyzing Entity <mux2to1> in library <work> (Architecture <Behavioral>).
+Entity <mux2to1> analyzed. Unit <mux2to1> generated.
+
+Analyzing Entity <notgate> in library <work> (Architecture <Behavioral>).
+Entity <notgate> analyzed. Unit <notgate> generated.
+
+Analyzing Entity <Communication_MUX> in library <work> (Architecture <Behavioral>).
+Entity <Communication_MUX> analyzed. Unit <Communication_MUX> generated.
+
+Analyzing Entity <Register_X> in library <work> (Architecture <Behavioral>).
+Entity <Register_X> analyzed. Unit <Register_X> generated.
+
+Analyzing Entity <Register_Y> in library <work> (Architecture <Behavioral>).
+Entity <Register_Y> analyzed. Unit <Register_Y> generated.
+
+Analyzing Entity <Control_Unit> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <GET_OWN> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GET_TYPE> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GET_LOC> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <get_fee_server> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <get_bal_server> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <get_c_type_server> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <datawidth_c_enable> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <printer_on> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <update_system> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <print> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <clear_printer> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <police_unit_on> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GET_PLATES> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <clear_viu> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <clear_police_unit> in unit <Control_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <Control_Unit> analyzed. Unit <Control_Unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Program_Counter>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/PC.vhd".
+    Found 6-bit register for signal <address_out>.
+    Found 6-bit up counter for signal <S1>.
+    Found 1-bit register for signal <upd<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   7 D-type flip-flop(s).
+Unit <Program_Counter> synthesized.
+
+
+Synthesizing Unit <Instruction_Memory>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/ROM.vhd".
+WARNING:Xst:1781 - Signal <rom<32:63>> is used but never assigned. Tied to default value.
+    Found 64x14-bit ROM for signal <$varindex0000> created at line 93.
+    Found 14-bit register for signal <instruction>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  14 D-type flip-flop(s).
+Unit <Instruction_Memory> synthesized.
+
+
+Synthesizing Unit <Instruction_register>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/IR.vhd".
+    Found 1-bit register for signal <operand1>.
+    Found 8-bit register for signal <operand2>.
+    Found 5-bit register for signal <opcode>.
+    Found 14-bit register for signal <S1>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+Unit <Instruction_register> synthesized.
+
+
+Synthesizing Unit <Communication_register>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Communication_register.vhd".
+    Found 16-bit register for signal <data_out_com>.
+    Found 16-bit register for signal <S1>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Communication_register> synthesized.
+
+
+Synthesizing Unit <Communication_demux>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Communication_demux.vhd".
+    Found 16-bit register for signal <send_location>.
+    Found 1-bit register for signal <send_owner_ack>.
+    Found 1-bit register for signal <send_c_type_ack>.
+    Found 1-bit register for signal <send_type_ack>.
+    Found 16-bit register for signal <send_owner>.
+    Found 1-bit register for signal <send_location_ack>.
+    Found 16-bit register for signal <send_c_type>.
+    Found 16-bit register for signal <send_balance>.
+    Found 16-bit register for signal <send_type>.
+    Found 16-bit register for signal <update_balance>.
+    Found 16-bit register for signal <send_fee>.
+    Found 16-bit register for signal <send_plate>.
+    Summary:
+	inferred 132 D-type flip-flop(s).
+Unit <Communication_demux> synthesized.
+
+
+Synthesizing Unit <Datawidth_Conveter>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Datawidth_Conveter.vhd".
+WARNING:Xst:647 - Input <send_c_type_in<15:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <send_type_in<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <send_location_in<15:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4x1-bit ROM for signal <c_conv_ack$mux0003>.
+    Found 1-bit register for signal <loc_conv_ack>.
+    Found 1-bit register for signal <send_c_type>.
+    Found 4-bit register for signal <send_type>.
+    Found 1-bit register for signal <c_conv_ack>.
+    Found 5-bit register for signal <send_loc>.
+    Found 1-bit register for signal <type_conv_ack>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  13 D-type flip-flop(s).
+Unit <Datawidth_Conveter> synthesized.
+
+
+Synthesizing Unit <Communication_MUX>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Communication_MUX.vhd".
+    Found 16-bit register for signal <mux_out>.
+    Found 16-bit 8-to-1 multiplexer for signal <mux_out$mux0000>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Communication_MUX> synthesized.
+
+
+Synthesizing Unit <Register_X>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/registerX.vhd".
+    Found 16-bit register for signal <data_out_X>.
+    Found 16-bit register for signal <S1>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Register_X> synthesized.
+
+
+Synthesizing Unit <Register_Y>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/registerY.vhd".
+    Found 16-bit register for signal <data_out_Y>.
+    Found 16-bit register for signal <S1>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Register_Y> synthesized.
+
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/Control_Unit.vhd".
+WARNING:Xst:647 - Input <WARNING> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <write_enable_x>.
+    Found 1-bit register for signal <write_enable_y>.
+    Found 1-bit register for signal <ir_w_enable>.
+    Found 3-bit register for signal <com_demux_selection>.
+    Found 1-bit register for signal <com_regi_w_enable>.
+    Found 3-bit register for signal <com_mux_selection>.
+    Found 6-bit register for signal <pc_address>.
+    Found 1-bit register for signal <pc_increment>.
+    Found 2-bit register for signal <datawidth_c_selection>.
+    Found 1-bit register for signal <pc_w_enable>.
+    Found 1-bit register for signal <VIU_ON>.
+    Found 1-bit register for signal <demux_enable>.
+    Found 8-bit register for signal <location_address>.
+    Found 1-bit register for signal <location_operation>.
+    Found 1-bit register for signal <com_regi_clear>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Control_Unit> synthesized.
+
+
+Synthesizing Unit <mux2to1>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/mux_2to1.vhd".
+    Found 16-bit register for signal <C>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <mux2to1> synthesized.
+
+
+Synthesizing Unit <notgate>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/notGate.vhd".
+    Found 16-bit register for signal <Z>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <notgate> synthesized.
+
+
+Synthesizing Unit <xorwithclk>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/xorwithclk.vhd".
+    Found 1-bit register for signal <C>.
+    Found 1-bit xor2 for signal <C$xor0000> created at line 45.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <xorwithclk> synthesized.
+
+
+Synthesizing Unit <andwithclk>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/andwithclk.vhd".
+    Found 1-bit register for signal <C>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <andwithclk> synthesized.
+
+
+Synthesizing Unit <orwithclk>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/orwithclk.vhd".
+    Found 1-bit register for signal <C>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <orwithclk> synthesized.
+
+
+Synthesizing Unit <fulladderstructural>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/fulladder.vhd".
+Unit <fulladderstructural> synthesized.
+
+
+Synthesizing Unit <sixteenbitadder>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/sixteenbitadder.vhd".
+WARNING:Xst:2563 - Inout <Cout> is never assigned. Tied to value Z.
+WARNING:Xst:646 - Signal <added_ack> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S<15:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <Cout>.
+    Summary:
+	inferred   1 Tristate(s).
+Unit <sixteenbitadder> synthesized.
+
+
+Synthesizing Unit <addsubunit>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/addsubunit.vhd".
+Unit <addsubunit> synthesized.
+
+
+Synthesizing Unit <test_unit>.
+    Related source file is "C:/Users/Sachith-PC/Desktop/xi/PETC_test/test_unit.vhd".
+WARNING:Xst:1306 - Output <send_type_ack> is never assigned.
+WARNING:Xst:647 - Input <WARNINGS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <GET_UPD_BAL> is never assigned.
+WARNING:Xst:647 - Input <com_regi_clear> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <update_balance_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <test_unit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 4x1-bit ROM                                           : 1
+ 64x14-bit ROM                                         : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 129
+ 1-bit register                                        : 100
+ 14-bit register                                       : 2
+ 16-bit register                                       : 17
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 2
+ 8-bit register                                        : 2
+# Multiplexers                                         : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <AND_1> is unconnected in block <adder_15>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND_2> is unconnected in block <adder_15>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OR_1> is unconnected in block <adder_15>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND_1> is unconnected in block <adder_16>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND_2> is unconnected in block <adder_16>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OR_1> is unconnected in block <adder_16>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <pc_address_5> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <send_location_5> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_6> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_7> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_8> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_9> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_10> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_11> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_12> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_13> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_14> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_location_15> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_4> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_5> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_6> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_7> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_8> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_9> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_10> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_11> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_12> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_13> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_14> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_type_15> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_1> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_2> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_3> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_4> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_5> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_6> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_7> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_8> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_9> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_10> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_11> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_12> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_13> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_14> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2677 - Node <send_c_type_15> of sequential type is unconnected in block <com_demux>.
+WARNING:Xst:2404 -  FFs/Latches <pc_address<5:5>> (without init value) have a constant value of 0 in block <Control_Unit>.
+
+Synthesizing (advanced) Unit <Datawidth_Conveter>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_c_conv_ack_mux0003> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <Datawidth_Conveter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 4x1-bit ROM                                           : 1
+ 64x14-bit ROM                                         : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 449
+ Flip-Flops                                            : 449
+# Multiplexers                                         : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <adder_16/OR_1/C> of sequential type is unconnected in block <sixteenbitadder>.
+WARNING:Xst:2677 - Node <adder_16/AND_1/C> of sequential type is unconnected in block <sixteenbitadder>.
+WARNING:Xst:2677 - Node <adder_16/AND_2/C> of sequential type is unconnected in block <sixteenbitadder>.
+WARNING:Xst:2677 - Node <adder_15/OR_1/C> of sequential type is unconnected in block <sixteenbitadder>.
+WARNING:Xst:2677 - Node <adder_15/AND_1/C> of sequential type is unconnected in block <sixteenbitadder>.
+WARNING:Xst:2677 - Node <adder_15/AND_2/C> of sequential type is unconnected in block <sixteenbitadder>.
+INFO:Xst:2261 - The FF/Latch <instruction_5> in Unit <Instruction_Memory> is equivalent to the following FF/Latch, which will be removed : <instruction_6> 
+WARNING:Xst:2041 - Unit sixteenbitadder: 1 internal tristate is replaced by logic (pull-up yes): Cout.
+
+Optimizing unit <test_unit> ...
+
+Optimizing unit <Program_Counter> ...
+
+Optimizing unit <Instruction_Memory> ...
+
+Optimizing unit <Instruction_register> ...
+
+Optimizing unit <Communication_register> ...
+
+Optimizing unit <Communication_demux> ...
+
+Optimizing unit <Datawidth_Conveter> ...
+
+Optimizing unit <Communication_MUX> ...
+
+Optimizing unit <Register_X> ...
+
+Optimizing unit <Register_Y> ...
+
+Optimizing unit <Control_Unit> ...
+
+Optimizing unit <mux2to1> ...
+
+Optimizing unit <notgate> ...
+
+Optimizing unit <sixteenbitadder> ...
+WARNING:Xst:1710 - FF/Latch <addsub/NOT_G/Z_13> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_14> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_15> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CU/com_demux_selection_0> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CU/com_demux_selection_2> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_type_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_type_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_type_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_type_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_ack> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_location_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_location_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_16/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_15/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_14/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_13/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_12/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_11/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_10/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_9/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_8/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_7/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_6/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_5/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_4/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_3/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_2/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_0> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_1> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_2> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_3> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_4> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_5> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_6> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_7> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_8> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_9> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_10> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_11> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/NOT_G/Z_12> (without init value) has a constant value of 1 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_type_ack> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_c_type_ack> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_c_type_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_fee_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_location_ack> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_owner_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_balance_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_location_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_location_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <com_demux/send_location_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_c_type> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_3/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_type_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_2/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_type_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_type_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_type_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_4/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_loc_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_5/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_loc_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_6/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_loc_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_7/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_loc_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_8/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_width/send_loc_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_9/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_10/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_11/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_12/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_13/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_14/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/S1_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/S1_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_5> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_14> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_15> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_4> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_3> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_1/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_2> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_1> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_13> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_12> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_11> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_10> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_9> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_8> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_7> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_X/data_out_X_6> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regi_Y/data_out_Y_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_15> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_14> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_13> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_12> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_11> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_10> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_9> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_8> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_7> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_6> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_5> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_4> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_3> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_2> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_c_type_1> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_15> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_14> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_13> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_12> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_11> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_10> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_9> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_8> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_7> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_6> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_location_5> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_15> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_14> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_13> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_12> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_11> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_10> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_9> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_8> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_7> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_6> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_5> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <com_demux/send_type_4> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <data_width/type_conv_ack> is unconnected in block <test_unit>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <data_width/loc_conv_ack> is unconnected in block <test_unit>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CU/write_enable_y> is unconnected in block <test_unit>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <data_width/c_conv_ack> is unconnected in block <test_unit>.
+WARNING:Xst:1710 - FF/Latch <addsub/ADDER_SIXTEEN/adder_14/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_13/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_12/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_11/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_10/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_9/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_8/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_7/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_6/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_5/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_4/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_1/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/MUX_S/C_0> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_3/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_2/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_1/XOR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_1/AND_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_1/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_2/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_2/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_3/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_3/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_4/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_4/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_5/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_5/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_6/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_6/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_7/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_7/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_8/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_8/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_9/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_10/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_10/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_9/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_11/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_12/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_11/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_12/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_13/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_14/AND_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_13/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_14/OR_1/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_15/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addsub/ADDER_SIXTEEN/adder_16/XOR_2/C> (without init value) has a constant value of 0 in block <test_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <CU/write_enable_x> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <CU/datawidth_c_selection_1> of sequential type is unconnected in block <test_unit>.
+WARNING:Xst:2677 - Node <CU/datawidth_c_selection_0> of sequential type is unconnected in block <test_unit>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <IR_1/S1_6> in Unit <test_unit> is equivalent to the following FF/Latch, which will be removed : <IR_1/S1_5> 
+INFO:Xst:2261 - The FF/Latch <IR_1/operand2_6> in Unit <test_unit> is equivalent to the following FF/Latch, which will be removed : <IR_1/operand2_5> 
+INFO:Xst:2261 - The FF/Latch <CU/location_address_6> in Unit <test_unit> is equivalent to the following FF/Latch, which will be removed : <CU/location_address_5> 
+Found area constraint ratio of 100 (+ 5) on block test_unit, actual ratio is 2.
+FlipFlop IR_1/opcode_1 has been replicated 1 time(s)
+FlipFlop IR_1/opcode_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 158
+ Flip-Flops                                            : 158
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : test_unit.ngr
+Top Level Output File Name         : test_unit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 233
+
+Cell Usage :
+# BELS                             : 273
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 9
+#      LUT2_D                      : 4
+#      LUT2_L                      : 5
+#      LUT3                        : 78
+#      LUT3_D                      : 2
+#      LUT3_L                      : 3
+#      LUT4                        : 95
+#      LUT4_D                      : 7
+#      LUT4_L                      : 16
+#      MUXF5                       : 34
+#      MUXF6                       : 16
+#      VCC                         : 1
+# FlipFlops/Latches                : 158
+#      FDC                         : 57
+#      FDCE                        : 72
+#      FDE                         : 29
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 212
+#      IBUF                        : 131
+#      OBUF                        : 81
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                      152  out of   5888     2%  
+ Number of Slice Flip Flops:            158  out of  11776     1%  
+ Number of 4 input LUTs:                221  out of  11776     1%  
+ Number of IOs:                         233
+ Number of bonded IOBs:                 213  out of    372    57%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 158   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------+------------------------+-------+
+Control Signal                        | Buffer(FF name)        | Load  |
+--------------------------------------+------------------------+-------+
+reset                                 | IBUF                   | 97    |
+CU/com_regi_clear(CU/com_regi_clear:Q)| NONE(Com_reg/S1_0)     | 32    |
+--------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.617ns (Maximum Frequency: 131.285MHz)
+   Minimum input arrival time before clock: 6.889ns
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.617ns (frequency: 131.285MHz)
+  Total number of paths / destination ports: 1195 / 253
+-------------------------------------------------------------------------
+Delay:               7.617ns (Levels of Logic = 6)
+  Source:            IR_1/opcode_0 (FF)
+  Destination:       CU/pc_w_enable (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: IR_1/opcode_0 to CU/pc_w_enable
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             18   0.591   1.148  IR_1/opcode_0 (IR_1/opcode_0)
+     LUT2_L:I1->LO         1   0.643   0.103  CU/pc_w_enable_cmp_eq0000_SW0 (N63)
+     LUT4:I3->O            4   0.648   0.667  CU/pc_w_enable_cmp_eq0000 (CU/pc_w_enable_cmp_eq0000)
+     LUT2_D:I1->O          1   0.643   0.423  CU/pc_w_enable_mux0057224 (CU/pc_w_enable_mux0057224)
+     LUT4_L:I3->LO         1   0.648   0.103  CU/pc_w_enable_mux0057184_SW0 (N78)
+     LUT4:I3->O            1   0.648   0.452  CU/pc_w_enable_mux0057227_SW0 (N93)
+     LUT4:I2->O            1   0.648   0.000  CU/pc_w_enable_mux0057270 (CU/pc_w_enable_mux0057)
+     FDC:D                     0.252          CU/pc_w_enable
+    ----------------------------------------
+    Total                      7.617ns (4.721ns logic, 2.896ns route)
+                                       (62.0% logic, 38.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 225 / 58
+-------------------------------------------------------------------------
+Offset:              6.889ns (Levels of Logic = 6)
+  Source:            VIU_ON_ack (PAD)
+  Destination:       CU/pc_w_enable (FF)
+  Destination Clock: clk rising
+
+  Data Path: VIU_ON_ack to CU/pc_w_enable
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.849   1.104  VIU_ON_ack_IBUF (VIU_ON_ack_IBUF)
+     LUT3_L:I0->LO         1   0.648   0.103  CU/pc_w_enable_mux0057160_SW1_SW1 (N110)
+     LUT4:I3->O            1   0.648   0.500  CU/pc_w_enable_mux0057160_SW1 (N70)
+     LUT4:I1->O            1   0.643   0.423  CU/pc_w_enable_mux0057184_SW1 (N79)
+     LUT4:I3->O            1   0.648   0.423  CU/pc_w_enable_mux0057227_SW1 (N94)
+     LUT4:I3->O            1   0.648   0.000  CU/pc_w_enable_mux0057270 (CU/pc_w_enable_mux0057)
+     FDC:D                     0.252          CU/pc_w_enable
+    ----------------------------------------
+    Total                      6.889ns (4.336ns logic, 2.553ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 42 / 42
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            CU/location_address_6 (FF)
+  Destination:       Location_address<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: CU/location_address_6 to Location_address<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.447  CU/location_address_6 (CU/location_address_6)
+     OBUF:I->O                 4.520          Location_address_5_OBUF (Location_address<5>)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 33.01 secs
+ 
+--> 
+
+Total memory usage is 245904 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  356 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
+

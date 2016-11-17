@@ -1,0 +1,190 @@
+# Reading C:/Modeltech_6.3f/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.3f Feb 28 2008 
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {test_unit.fdo} 
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity xorwithclk
+# -- Compiling architecture behavioral of xorwithclk
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity orwithclk
+# -- Compiling architecture behavioral of orwithclk
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity andwithclk
+# -- Compiling architecture behavioral of andwithclk
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladderstructural
+# -- Compiling architecture structural of fulladderstructural
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sixteenbitadder
+# -- Compiling architecture structural of sixteenbitadder
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity notgate
+# -- Compiling architecture behavioral of notgate
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity instruction_memory
+# -- Compiling architecture behavioral of instruction_memory
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity register_y
+# -- Compiling architecture behavioral of register_y
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity register_x
+# -- Compiling architecture behavioral of register_x
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity program_counter
+# -- Compiling architecture behavioral of program_counter
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity instruction_register
+# -- Compiling architecture behavioral of instruction_register
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity datawidth_conveter
+# -- Compiling architecture behavioral of datawidth_conveter
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture behavioral of control_unit
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity communication_register
+# -- Compiling architecture behavioral of communication_register
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity communication_mux
+# -- Compiling architecture behavioral of communication_mux
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity communication_demux
+# -- Compiling architecture behavioral of communication_demux
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity addsubunit
+# -- Compiling architecture structural of addsubunit
+# Model Technology ModelSim SE vcom 6.3f Compiler 2008.02 Feb 28 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity test_unit
+# -- Compiling architecture structural of test_unit
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.test_unit 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.test_unit(structural)
+# Loading ieee.numeric_std(body)
+# Loading work.program_counter(behavioral)
+# Loading work.instruction_memory(behavioral)
+# Loading work.instruction_register(behavioral)
+# Loading work.communication_register(behavioral)
+# Loading work.communication_demux(behavioral)
+# Loading work.datawidth_conveter(behavioral)
+# Loading work.addsubunit(structural)
+# Loading work.sixteenbitadder(structural)
+# Loading work.fulladderstructural(structural)
+# Loading work.xorwithclk(behavioral)
+# Loading work.andwithclk(behavioral)
+# Loading work.orwithclk(behavioral)
+# Loading work.mux2to1(behavioral)
+# Loading work.notgate(behavioral)
+# Loading work.communication_mux(behavioral)
+# Loading work.register_x(behavioral)
+# Loading work.register_y(behavioral)
+# Loading work.control_unit(behavioral)
+# .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf
+# .main_pane.workspace.interior.cs.nb.canvas.notebook.cs.page2.cs
+# .main_pane.signals.interior.cs
+force -freeze sim:/test_unit/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/test_unit/reset 0 0
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 0  Instance: /test_unit/rom_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 1 us  Iteration: 0  Instance: /test_unit/rom_1
+force -freeze sim:/test_unit/viu_on_ack 1 0
+force -freeze sim:/test_unit/get_owner 0000000101011001 0
+force -freeze sim:/test_unit/own_ack 1 0
+force -freeze sim:/test_unit/chk_crt 1 0
+force -freeze sim:/test_unit/manual 0 0
+force -freeze sim:/test_unit/get_fee 0000000000000110 0
+force -freeze sim:/test_unit/get_fee_server_ack 1 0
+force -freeze sim:/test_unit/get_balance 0000000000001111 0
+force -freeze sim:/test_unit/get_bal_server_ack 1 0
+force -freeze sim:/test_unit/get_c_type 0000011111111110 0
+force -freeze sim:/test_unit/get_c_type_server_ack 1 0
+# Break key hit 
+# Break in Process line__69 at fulladder.vhd line 69
+restart
+force -freeze sim:/test_unit/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/test_unit/reset 0 0
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_unit/rom_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /test_unit/rom_1
+force -freeze sim:/test_unit/viu_on_ack 1 0
+force -freeze sim:/test_unit/get_owner 0000000000111111 0
+force -freeze sim:/test_unit/own_ack 1 0
+force -freeze sim:/test_unit/chk_crt 1 0
+force -freeze sim:/test_unit/manual 0 0
+force -freeze sim:/test_unit/get_fee 0000000000001101 0
+force -freeze sim:/test_unit/get_fee_server_ack 1 0
+force -freeze sim:/test_unit/get_balance 0000000001100000 0
+force -freeze sim:/test_unit/get_bal_server_ack 1 0
+force -freeze sim:/test_unit/get_c_type 0000000000000001 0
+force -freeze sim:/test_unit/get_c_type_server_ack 1 0
+# Break key hit 
+# Break in Process line__69 at fulladder.vhd line 69
+# Break key hit 
+restart
+force -freeze sim:/test_unit/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/test_unit/reset 0 0

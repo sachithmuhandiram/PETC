@@ -1,0 +1,476 @@
+m255
+K3
+13
+Z0 cModel Technology
+Z1 dC:\Users\Sachith-PC\Desktop\xi\PETC_test
+T_opt
+V<K@S[f?95h=DPf:cFQL;i1
+04 9 10 work test_unit structural 0
+Z2 =1-16db3002d4cf-5811a77a-ee-328
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tExplicit 1
+Z5 OE;O;6.3f;37
+Eaddsubunit
+Z6 w1477423697
+Z7 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z8 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z9 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z10 8addsubunit.vhd
+Z11 Faddsubunit.vhd
+l0
+L34
+Z12 V4?mBEcl5Ba;K0ePa6a9Z42
+Z13 OE;C;6.3f;37
+31
+Z14 o-explicit -93
+R4
+Astructural
+R7
+R8
+R9
+Z15 DEx4 work 10 addsubunit 0 22 4?mBEcl5Ba;K0ePa6a9Z42
+l75
+L44
+Z16 V32`AWcE@am6[^036onG2b2
+R13
+31
+Z17 Mx3 4 ieee 14 std_logic_1164
+Z18 Mx2 4 ieee 15 std_logic_arith
+Z19 Mx1 4 ieee 18 std_logic_unsigned
+R14
+R4
+Eandwithclk
+Z20 w1476976027
+R9
+Z21 8andwithclk.vhd
+Z22 Fandwithclk.vhd
+l0
+L32
+Z23 VNjdA5CC^O7Ej@J^;8zCR<0
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z24 DEx4 work 10 andwithclk 0 22 NjdA5CC^O7Ej@J^;8zCR<0
+l40
+L39
+Z25 VK7@@fzz3cNT_mSKc8Y]SX2
+R13
+31
+Z26 Mx1 4 ieee 14 std_logic_1164
+R14
+R4
+Ecommunication_demux
+Z27 w1477292380
+R9
+Z28 8Communication_demux.vhd
+Z29 FCommunication_demux.vhd
+l0
+L32
+Z30 VoJ4@2mC@V^n_57[[i_zhF3
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z31 DEx4 work 19 communication_demux 0 22 oJ4@2mC@V^n_57[[i_zhF3
+l57
+L55
+Z32 VJD9<loW7:oB6YL35DWko>1
+R13
+31
+R26
+R14
+R4
+Ecommunication_mux
+Z33 w1477110790
+R9
+Z34 8Communication_MUX.vhd
+Z35 FCommunication_MUX.vhd
+l0
+L32
+Z36 VLA_UaZUDILendOGXRC?cg0
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z37 DEx4 work 17 communication_mux 0 22 LA_UaZUDILendOGXRC?cg0
+l49
+L47
+Z38 Vgkg2S;Ef1Jk<15408E;4G1
+R13
+31
+R26
+R14
+R4
+Ecommunication_register
+Z39 w1476940350
+R9
+Z40 8Communication_register.vhd
+Z41 FCommunication_register.vhd
+l0
+L32
+Z42 VlgDz4UdVX0@H=3=coh19H0
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z43 DEx4 work 22 communication_register 0 22 lgDz4UdVX0@H=3=coh19H0
+l44
+L40
+Z44 V1YnE=AjE0JCjg<`<IglCD2
+R13
+31
+R26
+R14
+R4
+Econtrol_unit
+Z45 w1477545444
+R9
+Z46 8Control_Unit.vhd
+Z47 FControl_Unit.vhd
+l0
+L32
+Z48 VES0BDeZDSI=ifZkTE7JFh0
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z49 DEx4 work 12 control_unit 0 22 ES0BDeZDSI=ifZkTE7JFh0
+l75
+L73
+Z50 VVEO^I3=X@EUod@Qc7I5hD2
+R13
+31
+R26
+R14
+R4
+Edatawidth_conveter
+Z51 w1476971690
+R9
+Z52 8Datawidth_Conveter.vhd
+Z53 FDatawidth_Conveter.vhd
+l0
+L32
+Z54 V=W^>6zkKnC[dHY7bnoWl]1
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z55 DEx4 work 18 datawidth_conveter 0 22 =W^>6zkKnC[dHY7bnoWl]1
+l50
+L48
+Z56 V0@ifTZ0VCcLa7_O1AjJfQ2
+R13
+31
+R26
+R14
+R4
+Efulladderstructural
+Z57 w1477421648
+R9
+Z58 8fulladder.vhd
+Z59 Ffulladder.vhd
+l0
+L32
+Z60 VT<U?<kW_;]UCaa:4]?cFL0
+R13
+31
+R14
+R4
+Astructural
+R9
+Z61 DEx4 work 19 fulladderstructural 0 22 T<U?<kW_;]UCaa:4]?cFL0
+l67
+L42
+Z62 VI_3R>[jK5F0QhWjkfgiaE3
+R13
+31
+R26
+R14
+R4
+Einstruction_memory
+Z63 w1477460500
+R7
+R8
+R9
+Z64 8ROM.vhd
+Z65 FROM.vhd
+l0
+L33
+Z66 VDW5`XZmWlR=9@5K?nc6;L1
+R13
+31
+R14
+R4
+Abehavioral
+R7
+R8
+R9
+Z67 DEx4 work 18 instruction_memory 0 22 DW5`XZmWlR=9@5K?nc6;L1
+l45
+L40
+Z68 VIS_6GnlQ4h^R?4HB^:D`I3
+R13
+31
+R17
+R18
+R19
+R14
+R4
+Einstruction_register
+Z69 w1476872100
+R9
+Z70 8IR.vhd
+Z71 FIR.vhd
+l0
+L32
+Z72 V2o>=j3`:hHRC?ZOd7_LYY1
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z73 DEx4 work 20 instruction_register 0 22 2o>=j3`:hHRC?ZOd7_LYY1
+l46
+L42
+Z74 Vn5c4aiQ@5KRdE;7gEHd0=1
+R13
+31
+R26
+R14
+R4
+Emux2to1
+Z75 w1476975585
+R9
+Z76 8mux_2to1.vhd
+Z77 Fmux_2to1.vhd
+l0
+L32
+Z78 VSgzAD>6L5W@`e]@k1H2c=2
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z79 DEx4 work 7 mux2to1 0 22 SgzAD>6L5W@`e]@k1H2c=2
+l42
+L40
+Z80 VM1OcbF715RO`ZZJCU]]nY2
+R13
+31
+R26
+R14
+R4
+Enotgate
+Z81 w1476975709
+R9
+Z82 8notGate.vhd
+Z83 FnotGate.vhd
+l0
+L32
+Z84 V_k_iOK@95G=P7[I4AO2f`1
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z85 DEx4 work 7 notgate 0 22 _k_iOK@95G=P7[I4AO2f`1
+l40
+L38
+Z86 V=iDeg1iVSELEV_^0UTXIj1
+R13
+31
+R26
+R14
+R4
+Eorwithclk
+Z87 w1476976074
+R9
+Z88 8orwithclk.vhd
+Z89 Forwithclk.vhd
+l0
+L32
+Z90 V7ZXHA8UoCf:nb2gc=NU5L0
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z91 DEx4 work 9 orwithclk 0 22 7ZXHA8UoCf:nb2gc=NU5L0
+l40
+L39
+Z92 V[6O?ogo`gMIWP3;lQmZDd3
+R13
+31
+R26
+R14
+R4
+Eprogram_counter
+Z93 w1477298339
+Z94 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R7
+R8
+R9
+Z95 8PC.vhd
+Z96 FPC.vhd
+l0
+L35
+Z97 V>icIDSHc?lmL[nQl5O^]a3
+R13
+31
+R14
+R4
+Abehavioral
+R94
+R7
+R8
+R9
+Z98 DEx4 work 15 program_counter 0 22 >icIDSHc?lmL[nQl5O^]a3
+l48
+L44
+Z99 VF00_Pf4:hMD?9M?TFY7?e3
+R13
+31
+Z100 Mx4 4 ieee 14 std_logic_1164
+Z101 Mx3 4 ieee 15 std_logic_arith
+Z102 Mx2 4 ieee 18 std_logic_unsigned
+Z103 Mx1 4 ieee 11 numeric_std
+R14
+R4
+Eregister_x
+Z104 w1476979452
+R9
+Z105 8registerX.vhd
+Z106 FregisterX.vhd
+l0
+L32
+Z107 VCV^chf0Lm6Xn98g7c4LP61
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z108 DEx4 work 10 register_x 0 22 CV^chf0Lm6Xn98g7c4LP61
+l44
+L40
+Z109 V2jCW[D0dE3:0;e9Fz>U`60
+R13
+31
+R26
+R14
+R4
+Eregister_y
+Z110 w1476979488
+R9
+Z111 8registerY.vhd
+Z112 FregisterY.vhd
+l0
+L32
+Z113 VaTZBC42g;08W>0@`0S<=Q1
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z114 DEx4 work 10 register_y 0 22 aTZBC42g;08W>0@`0S<=Q1
+l44
+L40
+Z115 VE39^0SgY<zkDlWAe@W_[D2
+R13
+31
+R26
+R14
+R4
+Esixteenbitadder
+Z116 w1477423403
+R9
+Z117 8sixteenbitadder.vhd
+Z118 Fsixteenbitadder.vhd
+l0
+L32
+Z119 VTHNAM:K8?NobC8[K>I[FN3
+R13
+31
+R14
+R4
+Astructural
+R9
+Z120 DEx4 work 15 sixteenbitadder 0 22 THNAM:K8?NobC8[K>I[FN3
+l56
+L42
+Z121 VG17DI=EGG3X:ATfFiFcb]0
+R13
+31
+R26
+R14
+R4
+Etest_unit
+Z122 w1477545678
+R7
+R8
+R9
+Z123 8test_unit.vhd
+Z124 Ftest_unit.vhd
+l0
+L26
+Z125 V]UPjB:`K4[SdiHeP5aH^z0
+R13
+31
+R14
+R4
+Astructural
+R7
+R8
+R9
+Z126 DEx4 work 9 test_unit 0 22 ]UPjB:`K4[SdiHeP5aH^z0
+l250
+L62
+Z127 V7>9WIoYzK^DKMgUYgWkKL3
+R13
+31
+R17
+R18
+R19
+R14
+R4
+Exorwithclk
+Z128 w1476975967
+R9
+Z129 8xorwithclk.vhd
+Z130 Fxorwithclk.vhd
+l0
+L32
+Z131 V9[KN2oK4MZVLglSoNL`f41
+R13
+31
+R14
+R4
+Abehavioral
+R9
+Z132 DEx4 work 10 xorwithclk 0 22 9[KN2oK4MZVLglSoNL`f41
+l40
+L39
+Z133 VJ0KeENAnXzF50]W21_D0D2
+R13
+31
+R26
+R14
+R4
